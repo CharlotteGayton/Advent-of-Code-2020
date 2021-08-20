@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/charlottegayton/Documents/Endjin/AdventOfCode/src/One/Task.csproj": {}
+    "/Users/charlottegayton/Documents/Endjin/AdventOfCode/src/File/Task.csproj": {}
   },
   "projects": {
-    "/Users/charlottegayton/Documents/Endjin/AdventOfCode/src/One/Task.csproj": {
+    "/Users/charlottegayton/Documents/Endjin/AdventOfCode/src/File/Task.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/charlottegayton/Documents/Endjin/AdventOfCode/src/One/Task.csproj",
+        "projectUniqueName": "/Users/charlottegayton/Documents/Endjin/AdventOfCode/src/File/Task.csproj",
         "projectName": "Task",
-        "projectPath": "/Users/charlottegayton/Documents/Endjin/AdventOfCode/src/One/Task.csproj",
+        "projectPath": "/Users/charlottegayton/Documents/Endjin/AdventOfCode/src/File/Task.csproj",
         "packagesPath": "/Users/charlottegayton/.nuget/packages/",
-        "outputPath": "/Users/charlottegayton/Documents/Endjin/AdventOfCode/src/One/obj/",
+        "outputPath": "/Users/charlottegayton/Documents/Endjin/AdventOfCode/src/File/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/charlottegayton/.nuget/NuGet/NuGet.Config"

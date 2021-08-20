@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "7/rwFEpcrVUp6Kw2PADR2Yd13Ima/jdISJZ/0qGkXK+jrOid1qrFUVZLFg1gaWXOX35GmDqhS18IiZpk8+NpdQ==",
+  "dgSpecHash": "2Kj0taqaVB2YhKfdbNdv3kRR8Pb1LkiSx3w4ENzlVujUy3IMJMF1eiUbfx+wx+u0p3DywIWfyySMdJtNwCs73Q==",
   "success": true,
-  "projectFilePath": "/Users/charlottegayton/Documents/Endjin/AdventOfCode/src/One/Task.csproj",
+  "projectFilePath": "/Users/charlottegayton/Documents/Endjin/AdventOfCode/src/File/Task.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

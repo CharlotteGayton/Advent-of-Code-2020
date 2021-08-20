@@ -68,21 +68,34 @@ namespace program{
         }
 
         public void TaskTwoPartTwo(){
+            /* 
+            The task validates whether a password under certain conditions. The numbers specified 
+            before the password indicate the position of the particular letter. If the letter is present 
+            in either of those positions it is accepted, but rejected if the letter is in both or none
+            */
 
+            //initialise file location and read the file 
             string folder = @"/Users/charlottegayton/temp/";
             StreamReader read = new StreamReader(folder + "filetwo.txt");
 
+            //Create an empty string that holds a line as it passes through the while loop 
+            //make empty lists for each sperate part (how many times the letter is allowed, the letter, and the password)
             string linevalue = string.Empty;
             List<String> timesAllowed = new List<String>();
             List<String> letter = new List<String>();
             List<String> password = new List<String>();
             int counter = 0;
 
+            //while loop that loops through each line of the input code
             while ((linevalue = read.ReadLine()) != null)
             {
 
+                //Split up the line so each part of the string can be used seperately 
                 string[] words = linevalue.Split(' ');
                 string[] numbers = words[0].Split('-');
+
+                //converting the numbers to integers so they can locate positions in the string 
+                //and removing the colon next to the allowed letter
                 int[] intnum = Array.ConvertAll(numbers, s => int.Parse(s));
                 words[1] = words[1].Remove(1);
                 string expression = words[1];
@@ -91,31 +104,47 @@ namespace program{
                 int numOne = int.Parse(numbers[0]);
                 int numTwo = int.Parse(numbers[1]);
 
-                //Char comparisonLet = words[1];
-
+                //splitting up the password into a string array
                 Char[] letters = words[2].ToCharArray();
                 var result = letters.Select(c => c.ToString()).ToList();
+
+                //Checking whether the letter is present in only one position
+                //if so counter is increased by one to indicate the password was right
                 if((result[numOne-1] == words[1] && !( result[numTwo-1] == words[1])) ||
                 !(result[numOne-1] == words[1]) && ( result[numTwo-1] == words[1])){
                     counter += 1;
                 }
                 
             }
-
+            //counter is returned to represent how many passwords passed the check
             Console.WriteLine(counter); 
 
         }
 
-        public void TaskThreePartThree(){
-            
-        }
-    
-       
+        public void TaskThreePartOne(){
 
-        static void Main(string[] args){
+            // string folder = @"/Users/charlottegayton/temp/";
+            // StreamReader read = new StreamReader(folder + "filethree.txt");
+
+            // string linevalue = string.Empty;
+            // List<String> timesAllowed = new List<String>();
+            // int counter = 2;
+            // int tree = 0;
+
+            // while ((linevalue = read.ReadLine()) != null){
+            //     if(counter >= (linevalue.Length - 3)){
+            //         counter = counter - linevalue.Length - 1; 
+            //     }
+            //     if(linevalue[counter] == '#'){
+            //         tree += 1;
+            //     }
+            //     counter += 3;
+
+            // }
+            // Console.WriteLine(tree);
+        }
+        public static void Main(string[] args){
             Program p = new Program();
-            p.TaskOnePartOne();
-            p.TaskTwoPartOne();
             p.TaskTwoPartTwo();
         }
 
